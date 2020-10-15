@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.ArrayList;
+public class Main{
+public class static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+Stack stack = new Stack();
+ArrayList ar=new ArrayList();
+int array=0;
+int n = sc.nextInt();
+int[] ar=new int[n];
+for(int i=1;i<=n;i++)
+arr[i]=sc.nextInt();
+for(int i=1;i<=n;i++){
+stack.add(i);
+array.add('+');
+while(!stack.isEmpty()&&array[index]==(int)stack.peek()){
+index++;
+stack.pop();
+array.add('-');
+}
+}
+if(!stack.isEmpty())
+System.out.println("no");
+else
+for(int i=0;i<array.size();i++)
+System.out.println(array.get(i));
+}
+}

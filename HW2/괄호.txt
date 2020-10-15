@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static boolean Valid(String pp){
+        char [] stack = new char[1024];
+        int t = -1;
+        for(int i=0;i<pp.length();i++){
+            char ch =pp.charAt(i);
+            if(ch=='('){
+                stack[++t]=ch;
+            }
+            else if(ch==')'){
+                if(t==-1||stack[t]!='(')
+                    return false;
+                t--;
+            }
+        }
+        return t==-1;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String pp=sc.next();
+        if(Valid(pp))
+            System.out.println("yes");
+        else
+            System.out.println("NO");
+    }
+}
